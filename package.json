@@ -1,0 +1,27 @@
+{
+  "name": "visma-task",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/RequestIdentifier.umd.cjs",
+  "module": "./dist/RequestIdentifier.js",
+  "types": "./dist/main.d.ts",
+  "exports": {
+    "types": "./main.d.ts",
+    "import": "./dist/RequestIdentifier.js",
+    "require": "./dist/RequestIdentifier.umd.cjs"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0",
+    "vite-plugin-dts": "^1.7.1",
+    "vitest": "^0.28.2"
+  }
+}
